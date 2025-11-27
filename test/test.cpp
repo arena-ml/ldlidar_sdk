@@ -68,11 +68,12 @@ struct LdsInfoStruct {
   uint32_t baudrate;
 };
 
-LdsInfoStruct LdsInfoArrary[4] = {
+LdsInfoStruct LdsInfoArrary[5] = {
   {"LD14", ldlidar::LDType::LD_14, 115200},
   {"LD14P", ldlidar::LDType::LD_14P, 230400},
   {"LD06", ldlidar::LDType::LD_06, 230400},
   {"LD19", ldlidar::LDType::LD_19, 230400},
+  {"STL_27L", ldlidar::LDType::STL_27L, 921600}
 };
 
 ldlidar::LDType GetLdsType(std::string in_str) {

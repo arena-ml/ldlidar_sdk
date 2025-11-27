@@ -20,6 +20,8 @@
 #ifndef __LINUX_SERIAL_PORT_H__
 #define __LINUX_SERIAL_PORT_H__
 
+#include <sched.h>
+#include <cstdint>
 #include <inttypes.h>
 #include <errno.h>
 #include <fcntl.h>
@@ -32,7 +34,6 @@ namespace asmtermios {
 }
 #include <termios.h>
 #include <unistd.h>
-
 #include <iostream>
 #include <atomic>
 #include <condition_variable>
